@@ -83,17 +83,22 @@ nav {
     background-image: url(./images/iphone_tradein_promo__d5au3rkw5kuq_small.jpg);
 }
 
+.textAboveImage {
+    padding-top: 50px;
+}
+
+.textBelowImage {
+    padding-top: 400px;
+}
+
 /* Multiple images in a background */
 #sixImagesInBackground {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
-    /* flex-direction: row; */
 }
 
 #sixImagesInBackground article {
     background-repeat: no-repeat;
-    /* background-size:contain; */
     background-position: center top;
     width: calc(50% - 10px);
     height: 580px;
@@ -116,9 +121,9 @@ nav {
 }
 
 #sectionLinks {
+    width: 225px;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
 }
 
 .cta-links {
@@ -138,6 +143,10 @@ footer {
     background-color: #f5f5f7;
 }
 
+ul li {
+    list-style: none;
+}
+
 li {
     font-size: 12px;
     font-weight: 400;
@@ -154,4 +163,34 @@ li {
 footer div a {
     margin: 0 15px;
     text-decoration: none;
+}
+
+footer div a:hover {
+    text-decoration: underline;
+    color: red;
+    font-size: larger;
+    font-weight: bolder;
+    
+}
+
+@media (max-width: 1065px) {
+    .imageInBackground {
+        width: 1065px;
+    }
+}
+
+@media (max-width: 700px) {
+    #sixImagesInBackground {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    #sixImagesInBackground article {
+        width: 100vw;
+    }
+}
+
+@media (min-width: 1235px) {
+    .imageInBackground {
+        width: 1235px;
+    }
 }
