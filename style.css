@@ -12,11 +12,6 @@ nav {
     background-color: rgba(251, 251, 253, .9);
 }
 
-#navBarLogo {
-    /* height: 15px; */
-
-}
-
 #navBarLinks {
     display: flex;
     align-items: center;
@@ -135,21 +130,13 @@ nav {
     color: blue;
 }
 
-/* .unit-image {
-    margin-top: 50px;
-    width: 400px;
-} */
-
 .whiteText {
     color: white;
 }
 
-
-
 footer {
     background-color: #f5f5f7;
 }
-
 
 li {
     font-size: 12px;
