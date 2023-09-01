@@ -5,7 +5,7 @@ body {
 nav {
     display:flex;
     justify-content: space-evenly;
-    margin: 0;
+    margin: 0 20px;
     height: 44px;
     /* padding: 0 22px;    */
     align-items: center;
@@ -25,13 +25,15 @@ nav {
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
-#navBarSearchIcon {
-    /* height: 15px; */
+#navBarIcons {
     margin: 0 16px;
 }
 
-#navBarShoppingBagIcon {
-    margin: 0 16px;
+#hamburger div {
+    height: 2px;
+    width: 15px;
+    background-color: black;
+    margin: 5px 0;
 }
 
 /* A single image in a background */
@@ -176,6 +178,22 @@ footer div a:hover {
 @media (max-width: 1065px) {
     .imageInBackground {
         width: 1065px;
+    }
+}
+
+#hamburger {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    #navBarLinks a {
+        display: none;
+    }
+    #hamburger {
+        display: block;
+    }
+    nav {
+        justify-content:space-between;
     }
 }
 
